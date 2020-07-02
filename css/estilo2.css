@@ -1,0 +1,17 @@
+#primero{
+	float: left;
+	width: 65%;
+	margin-right: 1%;
+	display: block;
+	height: 190px;
+}
+#segundo{
+	float: right;
+	width: 26%;
+	display: block;
+	height: 190px;
+}
+#tercero{
+	clear: both;
+	width: 96%;
+}
