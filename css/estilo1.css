@@ -3,9 +3,9 @@ html, body{
 	padding:0;
 	border:none;
 	font-family:'Raleway', sans-serif;
-	background: #001824;
+	background: #4682B4;
 }
-#cabecera{
+header{
 	margin-bottom: 0;
 }
 #primero{
@@ -17,20 +17,28 @@ html, body{
 #tercero{
 	background: #73021b;
 }
-#pie{
+footer{
 	clear: both;
 }
-#cabecera, #pie,#primero,#segundo,#tercero{
-	padding: 1.25em 2%;
+header, footer,#primero,#segundo,#tercero{
+	padding: 1em 2%;
 	margin:0.4em 0;
 }
 #contenedor{
 	width: 80%;
 	margin: auto;
 }
-#cabecera, #pie{
-	background: #001824;
-	color: #FEC500;
+header, nav{
+	background: #4682B4;
+	color: #FFFFFF;
+	display: block;
+}
+section{
+	background-image: url(../image/42650338.jpg);
+}
+footer{
+	background-color: #013277;
+	color: #FFFFFF;
 	display: block;
 }
 #contenido{
@@ -40,7 +48,7 @@ html, body{
 	text-align: center;
 	font-size: 30px;
 }
-div.nav_bar span{
+nav span{
 	padding-left:75px;
 	padding-right:75px;
 }
