@@ -2,7 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/Inicio1.css">
+	<link rel="stylesheet" type="text/css" href="../css/InicioSection1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/laboratorios.css">
+    <link rel="stylesheet" type="text/css" href="../css/laboratoriosMain.css">
     <title>Laboratorios</title>
 </head>
 <body>
@@ -11,16 +15,37 @@
             <p class="titulo">ESCOM LAB´S</p>
         </header>
         <nav>
-            <span>Inicio</span>
-            <span>Sobre nosotros</span>
-            <span>Servicios</span>
-            <span>Laboratorios</span>
-            <span>Contacto</span>
-            <span>Ingresa</span>
+            <div class="fis">
+                <ul class="menu">
+                    <li><a href="inicio.html"> Inicio </a>
+        
+                    </li>
+        
+                    <li><a href="sobreNosotros.html" > Sobre nosotros</a>
+                    </li>
+        
+                    <li><a href="servicios.html"> Servicios </a>
+                        <ul class="submenu">
+                            <li><a href=""> Consultar Laboratorios </a></li>
+                            <li><a href=""> Computadoras </a></li>
+                            <li><a href=""> Informar </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="laboratorios.html"> Laboratorios </a>
+                      <ul class="submenu">
+                        <li><a href="">Laboratorio de Programación 1 </a></li>
+                        <li><a href="">Laboratorio de Programación 2 </a></li>
+                        <li><a href="">Laboratorio de Sistemas 1 </a></li>
+                        <li><a href="">Laboratorio de Sistemas 2 </a></li>
+                      </ul>
+                      </li>
+                    <li><a href="inicio.html"> Contacto </li>
+                </ul>
+            </div>
         </nav>
     </div>
     <main class="contenedor__laboratorios">
-        <h2 class="contenedor__titulos">Laboratorios</h2>
+            <h2 class="contenedor__titulos">Laboratorios</h2>
         <div class="contenedor__laboratorio">
             <div class="contenedor__laboratorio__img">
                 <img src="../image/Imagen1.png" alt="" class="img_lab">
@@ -35,7 +60,7 @@
         </div>
         <div class="contenedor__laboratorio">
             <div class="contenedor__laboratorio__img">
-                <img src="../image/Imagen1.png" alt="" class="img_lab">
+                <img src="../image/Imagen2.png" alt="" class="img_lab">
             </div>
             <div class="contenedor__laboratorio__info">
                 <h4>Laboratorio de Programación 2</h4>
@@ -47,7 +72,7 @@
         </div>
         <div class="contenedor__laboratorio">
             <div class="contenedor__laboratorio__img">
-                <img src="../image/Imagen1.png" alt="" class="img_lab">
+                <img src="../image/Imagen3.png" alt="" class="img_lab">
             </div>
             <div class="contenedor__laboratorio__info">
                 <h4>Laboratorio de Sistemas 1</h4>
@@ -59,7 +84,7 @@
         </div>
         <div class="contenedor__laboratorio">
             <div class="contenedor__laboratorio__img">
-                <img src="../image/Imagen1.png" alt="" class="img_lab">
+                <img src="../image/Imagen4.png" alt="" class="img_lab">
             </div>
             <div class="contenedor__laboratorio__info">
                 <h4>Laboratorio de Sistemas 2</h4>
@@ -71,11 +96,7 @@
         </div>
     </main>
     <footer>
-		<nav>
-            <span>Inicio</span>
-            <span>Sobre nosotros</span>
-            <span>Contacto</span>
-        </nav>
+		<p>Inicio | Sobre nosotros | Contactanos </p>
 		<p>&copy; 2020 Tecnologías para la Web</p>
 	</footer>
 </body>

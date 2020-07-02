@@ -8,64 +8,18 @@ section header{
 	text-align: center;
 	opacity: 60%;
 	padding: 0.1%;
-	margin-top: 5em;
+	margin-top: 2em;
 	margin-left: 0;
 	margin-right: 0;
 }
-section article{
+#computadora{
 	float: left;
-	width: 100%;
-	margin-right: 1%;
-	padding: 1em 2%;
-	margin-top: 20em;
-	margin-left: 0;
-	margin-right: 0;
-	margin-bottom: 0;
-	background: #87CEEB;
-}
-#contacto{
-	float: left;
-	width: 100%;
-	margin-right: 1%;
-	padding: 1em 2%;
-	margin-top: 0;
-	margin-left: 0;
-	margin-right: 0;
-	margin-bottom: 0;
-	background: #2375a8;
-}
-
-#servicios{
-	float: left;
-	width: 300px;
-	height: 400px;
+	width: 400px;
+	height: 600px;
 	text-align: center;
 	margin-top: 1em;
-	margin-left: 10em;
-	padding: 1%;
-	background-color: #013277;
-	color: #FFFFFF;
-}
-
-#laboratorios{
-	float: left;
-	width: 300px;
-	height: 400px;
-	text-align: center;
-	margin-top: 1em;
-	margin-left: 2em;
-	padding: 1%;
-	background-color: #013277;
-	color: #FFFFFF;
-}
-
-#usuarios{
-	float: left;
-	width: 300px;
-	height: 400px;
-	text-align: center;
-	margin-top: 1em;
-	margin-left: 2em;
+    margin-left: 30em;
+    margin-bottom: 2em;
 	padding: 1%;
 	background-color: #013277;
 	color: #FFFFFF;
@@ -76,11 +30,17 @@ h1{
 	font-size: 30px;
 }
 
-input{
-	background-color: #2a84bb;
+input, select{
+    background-color: #2a84bb;
+    margin-top: 1em;
 	border: #2a84bb;
 	height: 1cm;
 	font-size: 20px;
+	color: #d0ecf3;
+}
+label, br{
+    margin-top: 1em;
+    font-size: 20px;
 	color: #d0ecf3;
 }
 
@@ -89,6 +49,7 @@ div{
 }
 
 textarea{
+    margin-top: 1em;
 	resize: none;
 }
 

@@ -2,9 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- para el menu -->
+    <link rel="stylesheet" type="text/css" href="../css/Inicio1.css">
+    <link rel="stylesheet" type="text/css" href="../css/InicioSection1.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/styles.css">-->
 
     <title>Servicios</title>
 </head>
@@ -12,15 +16,36 @@
     <div class="header">
         <div class="logo">
             <img src="../image/logoescom.png" alt="logo">
-            <p class="titulo">ESCOM LAB´S</p>
+            <h1 class="titulo">ESCOM LAB´S</h1>
         </div>
-        <nav>
-            <span>Inicio</span>
-            <span>Sobre nosotros</span>
-            <span>Servicios</span>
-            <span>Laboratorios</span>
-            <span>Contacto</span>
-            <span>Ingresa</span>
+        <nav class="navegacion">
+            <div class="fis">
+                <ul class="menu">
+                    <li><a href="inicio.html"> Inicio </a>
+        
+                    </li>
+        
+                    <li><a href="sobreNosotros.html" > Sobre nosotros</a>
+                    </li>
+        
+                    <li><a href="servicios.html"> Servicios </a>
+                        <ul class="submenu">
+                            <li><a href=""> Consultar Laboratorios </a></li>
+                            <li><a href=""> Computadoras </a></li>
+                            <li><a href=""> Informar </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="laboratorios.html"> Laboratorios </a>
+                      <ul class="submenu">
+                        <li><a href="">Laboratorio de Programación 1 </a></li>
+                        <li><a href="">Laboratorio de Programación 2 </a></li>
+                        <li><a href="">Laboratorio de Sistemas 1 </a></li>
+                        <li><a href="">Laboratorio de Sistemas 2 </a></li>
+                      </ul>
+                      </li>
+                    <li><a href="inicio.html"> Contacto </li>
+                </ul>
+            </div>
         </nav>
     </div>
     <main class="contenedor__servicios">
