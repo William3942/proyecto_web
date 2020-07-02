@@ -26,8 +26,50 @@
 	color: #FFFFFF;
 }
 
-.contenedor__laboratorio__img img{
-    width: 300px; height: 300px;
+.contenedor img {
+	position: absolute;
+	left:16em;
+	top: 43em;
+	transition: opacity 1.5s ease-in-out;
+	width: 300px; height: 300px;
+}  
+.contenedor img.top:hover {
+	width: 300px; height: 300px;
+	opacity: 0;
+}
+
+.contenedor2 img {
+	position: absolute;
+	left:51em;
+	top: 43em;
+	transition: opacity 1.5s ease-in-out;
+	width: 300px; height: 300px;
+}
+.contenedor2 img.top:hover {
+	width: 300px; height: 300px;
+	opacity: 0;
+}
+.contenedor3 img {
+	position: absolute;
+	left:16em;
+	top: 79em;
+	transition: opacity 1.5s ease-in-out;
+	width: 300px; height: 300px;
+}  
+.contenedor3 img.top:hover {
+	width: 300px; height: 300px;
+	opacity: 0;
+}
+.contenedor4 img {
+	position: absolute;
+	left:51em;
+	top: 79em;
+	transition: opacity 1.5s ease-in-out;
+	width: 300px; height: 300px;
+}
+.contenedor4 img.top:hover {
+	width: 300px; height: 300px;
+	opacity: 0;
 }
 
 button{
