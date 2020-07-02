@@ -3,19 +3,11 @@ html, body{
 	padding:0;
 	border:none;
 	font-family:'Raleway', sans-serif;
-	background-image: url(../image/42650338.jpg);
+	background-image: url(../image/a6f7314c9d50837a87b78b4d2d8183b8.jpg);
 	background-size: 100% 100%;
 }
 header{
-    margin-bottom: 0;
-    background: #4682B4;
-    color: #FFFFFF;
-}
-header img{
-    width: 150px; height: 100px;
-    position: relative;
-    top: -100px; 
-    right: 0px;
+	margin-bottom: 0;
 }
 footer{
 	clear: both;
@@ -28,7 +20,7 @@ header, footer{
 	width: 80%;
 	margin: auto;
 }
-nav{
+header, nav{
 	background: #4682B4;
 	color: #FFFFFF;
 	display: block;
