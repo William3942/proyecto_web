@@ -33,6 +33,7 @@ section article{
 	margin-right: 0;
 	margin-bottom: 0;
 	background: #2375a8;
+	color: #ffffff;
 }
 
 #servicios{
@@ -124,16 +125,18 @@ textarea{
 	margin: 30px auto;
 	background-color: #2375a8;
 	  color: white;
+	display: absolute;
 }
 
 
 
 .fis ul {
 	list-style: none;
+	display: fixed;
 }
 
 .menu>li {
-	/* position: relative; */
+	
 	display: inline-block;
 
 }
