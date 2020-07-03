@@ -30,14 +30,15 @@
     width: 300px; height: 300px;
 }
 
+
 input{
-    background-color: #2a84bb;
+	background-color: #2a84bb;
 	border: #2a84bb;
-    height: 1cm;
-    width: 5cm;
+	height: 1cm;
 	font-size: 20px;
 	color: #d0ecf3;
 }
+
 
 /* MENU */
 .fis {
