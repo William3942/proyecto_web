@@ -39,3 +39,9 @@ nav span{
 	padding-left:75px;
 	padding-right:75px;
 }
+a {
+	padding: 15px 20px;
+	color: white;
+	font-family: seins-arial;
+	text-decoration: none;
+}

@@ -88,7 +88,13 @@ input{
 div{
 	text-align: center;
 }
-
+a {
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	font-family: seins-arial;
+	text-decoration: none;
+}
 textarea{
 	resize: none;
 }

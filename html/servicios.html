@@ -12,33 +12,33 @@
 	</header>
 	<nav>
         <center>
-		<div class="fis">
-			<ul class="menu">
-				<li><a href="inicio.html"> Inicio </a>
-	
-				</li>
-	
-				<li><a href="sobreNosotros.html" > Sobre nosotros</a>
-				</li>
-	
-				<li><a href="servicios.html"> Servicios </a>
-					<ul class="submenu">
-						<li><a href=""> Consultar Laboratorios </a></li>
-						<li><a href=""> Computadoras </a></li>
-						<li><a href=""> Informar </a></li>
-					</ul>
-				</li>
-				<li><a href="laboratorios.html"> Laboratorios </a>
-				  <ul class="submenu">
-					<li><a href="">Laboratorio de Programación 1 </a></li>
-					<li><a href="">Laboratorio de Programación 2 </a></li>
-					<li><a href="">Laboratorio de Sistemas 1 </a></li>
-					<li><a href="">Laboratorio de Sistemas 2 </a></li>
-				  </ul>
-				  </li>
-				<li><a href="#contacto"> Contacto </a></li>
-			</ul>
-        </div>
+            <div class="fis">
+                <ul class="menu">
+                    <li><a href="inicio.html"> Inicio </a>
+        
+                    </li>
+        
+                    <li><a href="sobreNosotros.html" > Sobre nosotros</a>
+                    </li>
+        
+                    <li><a href="servicios.html"> Servicios </a>
+                        <ul class="submenu">
+                            <li><a href="http://localhost/PROYECTO_WEB/PHP/consultaLabs.php"> Consultar Laboratorios </a></li>
+                            <li><a href="http://localhost/PROYECTO_WEB/PHP/consultaCom.php"> Computadoras </a></li>
+                            <li><a href="Inicio.html"> Informar </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="laboratorios.html"> Laboratorios </a>
+                      <ul class="submenu">
+                        <li><a href="computadoras.html">Laboratorio de Programación 1 </a></li>
+                            <li><a href="computadoras.html">Laboratorio de Programación 2 </a></li>
+                            <li><a href="computadoras.html">Laboratorio de Sistemas 1 </a></li>
+                            <li><a href="computadoras.html">Laboratorio de Sistemas 2 </a></li>
+                      </ul>
+                      </li>
+                    <li><a href="#contacto"> Contacto </a></li>
+                </ul>
+            </div>
         </center>
 	</nav>
     <main class="contenedor__servicios">
@@ -56,7 +56,7 @@
                     <p>No te toma más de 10 min.</p>
                 </div>
                 <div class="boton">
-                    <button>IR</button>
+                    <input type="button" name="usuarios" value="Ir" onclick="location.href='../PHP/consultaLabs.php'">
                 </div>
             </div>
             <div class="contenedor__servicio">
@@ -68,7 +68,7 @@
                     <p>No te toma más de 15 min.</p>
                 </div>
                 <div class="boton">
-                    <button>IR</button>
+                    <input type="button" name="usuarios" value="Ir" onclick="location.href='../PHP/consultaCom.php'">
                 </div>
             </div>
             <div class="contenedor__servicio">
@@ -81,13 +81,12 @@
                     
                 </div>
                 <div class="boton">
-                    <button>IR</button>
+                    <input type="button" name="usuarios" value="Ir" onclick="location.href='../html/inicio.html'">
                 </div>
             </div>
         </div>
     </main>
 	<footer>
-		<p>Inicio | Sobre nosotros | Contactanos </p>
 		<p>&copy; 2020 Tecnologías para la Web</p>
 	</footer>
 </body>
