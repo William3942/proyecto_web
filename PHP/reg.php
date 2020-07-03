@@ -1,20 +1,36 @@
 <?php
-    //conexion con la base de datos y el servidor
-    $link = mysql_connect("localhost","root","root")or die("<h2>No se encuentra el servidor</h2>");
-    $db=mysql_select_db("sistematw",$link) or die("<h2>Error de Conexion</h2>");
+    $servidor="localhost";
+    $usuario="root";
+    $clave="root";
+    $baseDeDatos="sistematw";
 
-    //obtenemos los valores del formulario
-    $nombre=$_POST['Nombre'];
-    $numero=$_POST['id'];
-    $email=$_POST['Email'];
-    $password=$_POST['Contraseña'];
-    $apellido=$_POST['Apellido'];
-    $TipUsr=$_POST['TipoUsuario'];
+    $enlace = mysqli_connect($servidor,$usuario,$clave,$baseDeDatos);
 
-    //obtiene la longitud de un string
-    $reg=(strlen($nombre)*strlen($numero)*strlen($email)*strlen($password))or die("No se han llenado todos los campos");
+    if(!$enlace)
+    {
+        echo"Error en la conexión con el servidor";
+    }
 
-    //ingresar la información a la tabla datos
-    mysql_query("INSERT INTO datos VALUES('$numero','$nombre','$password','$email','$apellido','$TipUsr')",$link) or die ("<h2>Error al enviar datos</h2>");
-    //echo 'holamundo';
+    if(isset($_POST['registrarse']))
+    {
+        $id = $_POST["id"];
+        $nombre = $_POST["Nombre"];
+        $apellido = $_POST["Apellido"];
+        $tipo = $_POST["TipoUsuario"];
+        $password = $_POST["Contraseña"];
+        $email = $_POST["Email"];
+
+        $insertarDatos = "INSERT INTO usuario VALUES('$id',
+                                                    '$nombre',
+                                                    '$apellido',
+                                                    '$tipo',
+                                                    '$password',
+                                                    '$email')";
+        $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);
+
+        if(!$ejecutarInsertar)
+        {
+            echo"Error en la linea de sql";
+        }
+    }
 ?>
