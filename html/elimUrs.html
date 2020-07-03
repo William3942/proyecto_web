@@ -32,7 +32,7 @@
 						<li><a href="">Laboratorio de Sistemas 2 </a></li>
 					</ul>
 				</li>
-				<li><a href="#contacto"> Contacto </a></li>
+				<li><a href="#contacto"> Contacto</a> </li>
 			</ul>
 		</div>
     </nav>
@@ -42,29 +42,11 @@
         </header>
         <article>
             <div id="ingresa">
-                <form action="../PHP/reg.php" method="POST">
-                    <label>Nombre de Usuario</label>
-                    <input type="text" name="Nombre" placeholder="Nombre"/>
-					<br>
-					<label>Apellido de Usuario</label>
-                    <input type="text" name="Apellido" placeholder="Apellido"/>
-                    <br>
+                <form action="../PHP/eliUsr.php" method="POST">
                     <label>Numero de Usuario</label>
                     <input type="number" name="id" placeholder="Numero de Boleta"/>
                     <br>
-                    <label>Contraseña</label>
-                    <br>
-                    <input type="password" name="Contraseña" placeholder="Contraseña"/>
-                    <br>   
-                    <label>Correo</label>
-                    <br>
-                    <input type="email" name="Email" placeholder="ejemplo@hotmail.com"/>
-					<br>
-					<label>Tipo de Usuario</label>
-					<br>
-                    <input type="text" name="TipoUsuario" placeholder="1,2,3"/>
-                    <br>
-                    <input type="submit" value="Ingresar" name="registrarse"/>
+                    <input type="submit" value="Eliminar" name="elim"/>
                 </form>
             </div>
         </article>
