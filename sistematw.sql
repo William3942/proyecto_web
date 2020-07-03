@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-07-2020 a las 06:10:13
+-- Tiempo de generación: 03-07-2020 a las 21:36:14
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.3
 
@@ -25,6 +25,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `apartarcompu`
+--
+
+CREATE TABLE `apartarcompu` (
+  `NumeroDeComputadora` int(11) NOT NULL,
+  `Entrada` datetime NOT NULL,
+  `Salida` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `apartarcompu`
+--
+
+INSERT INTO `apartarcompu` (`NumeroDeComputadora`, `Entrada`, `Salida`) VALUES
+(0, '2020-07-03 00:32:00', '2020-07-04 00:32:00'),
+(2, '2020-07-09 00:44:00', '2020-07-11 00:44:00');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `computadora`
 --
 
@@ -42,6 +62,7 @@ CREATE TABLE `computadora` (
 --
 
 INSERT INTO `computadora` (`NumeroDeComputadora`, `EstadoPantalla`, `EstadoCPU`, `EstadoTeclado`, `EstadoRaton`, `Sistema(s)Operativo(s)`) VALUES
+(0, 'sin daños', 'sin daños', 'sin daños', 'sin daños', 'windows'),
 (1, 'Sin daños', 'Sin daños', 'Sin daños', 'Sin daños', 'windows'),
 (2, 'Sin daños', 'Sin daños', 'Sin daños', 'Sin daños', 'windows y ubuntu'),
 (3, 'Sin daños', 'No enciende', 'Sin daños', 'Sin daños', 'windows'),
@@ -138,12 +159,12 @@ INSERT INTO `usuario` (`id`, `Nombre`, `Apellido`, `TipoUsuario`, `Contraseña`,
 (3, 'Guillermo', 'Jacome', 3, '12345', 'ejemplo20@hotmail.com'),
 (350008, 'José', 'Perez', 2, '12345', 'ejemplo8@hotmail.com'),
 (350009, 'Ester', 'Juarez', 2, '12345', 'ejemplo9@hotmail.com'),
-(350010, 'Estefani', 'Zuñiga', 2, '12345', 'ejemplo10@hotmail.com'),
+(350010, 'Estefany', 'Merino', 2, '12345', 'ejemplo10@hotmail.com'),
 (350016, 'Ruben', 'Santos', 2, '12345', 'ejemplo16@hotmail.com'),
 (350017, 'Josefa', 'Santiago', 2, '12345', 'ejemplo17@hotmail.com'),
-(2020350001, 'Juan', '0', 1, '12345', 'ejemplo1@hotmail.com'),
-(2020350002, 'Santiago', '0', 1, '12345', 'ejemplo2@hotmail.com'),
-(2020350003, 'Aida', '0', 1, '12345', 'ejemplo3@hotmail.com'),
+(2020350001, 'Juan', 'De la luna', 1, '12345', 'ejemplo1@hotmail.com'),
+(2020350002, 'Santiago', 'Chile', 1, '12345', 'ejemplo2@hotmail.com'),
+(2020350003, 'Aida', 'Aguilar', 1, '12345', 'ejemplo3@hotmail.com'),
 (2020350004, 'Juan', 'lopez', 1, '12345', 'ejemplo4@hotmail.com'),
 (2020350005, 'Alondra', 'Flores', 1, '12345', 'ejemplo5@hotmail.com'),
 (2020350006, 'Juan', 'hernandez', 1, '12345', 'ejemplo6@hotmail.com'),
@@ -156,6 +177,12 @@ INSERT INTO `usuario` (`id`, `Nombre`, `Apellido`, `TipoUsuario`, `Contraseña`,
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `apartarcompu`
+--
+ALTER TABLE `apartarcompu`
+  ADD PRIMARY KEY (`NumeroDeComputadora`);
 
 --
 -- Indices de la tabla `computadora`
