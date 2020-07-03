@@ -45,10 +45,10 @@
         </header>
         <article>
             <div id="computadora">
-                <form>
-                    <select>
-                        <option value="1">Computadora 1</option>
-                    </select>
+                <form action="../PHP/compu.php" method="POST">
+                    <label>Numero de Computadora</label>
+                    <br>
+                    <input type="number" name="NumeroDeComputadora"/>
                     <br>
                     <label>Sistema(s) Operativo(s)</label>
                     <textarea rows="1" cols="30" name="SO" readonly="on"></textarea>
@@ -59,13 +59,13 @@
                     <br>
                     <label>Entrada</label>
                     <br>
-                    <input type="datetime-local" name="entrada"/>
+                    <input type="datetime-local" name="Entrada"/>
                     <br>
                     <label>Salida</label>
                     <br>
-                    <input type="datetime-local" name="salida"/>
+                    <input type="datetime-local" name="Salida"/>
                     <br>
-                    <input type="submit" value="Enviar"/>
+                    <input type="submit" value="Enviar" name ="comput"/>
                 </form>
             </div>
         </article>
